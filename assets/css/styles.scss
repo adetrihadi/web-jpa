@@ -248,12 +248,18 @@ body {
   }
 }
 
+@mixin subheading {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+}
+
 .satu-garis {
   display: block;
   height: 3px;
   background: var(--color-light-blue);
-  margin-top: -8px;
-  margin-left: calc(100% / 4.5);
   width: 40px;
 }
 
@@ -381,14 +387,11 @@ body {
   }
 
   .about__subheading {
+    @include subheading;
     color: var(--color-subheading);
     font-weight: 800;
     text-transform: uppercase;
     width: 100%;
-
-    .satu-garis {
-      margin-left: calc(100% / 4.3);
-    }
   }
   
   .about__heading {
@@ -467,15 +470,12 @@ body {
   }
 
   .about__vision__subheading {
+    @include subheading;
     color: var(--color-white-40);
     font-size: $subheading-size-xl;
     font-weight: 800;
     letter-spacing: 2.5px;
     text-transform: uppercase;
-
-    .satu-garis {
-      margin-left: calc(100% / 2);
-    }
   }
   
   .about__vision__title {
@@ -542,14 +542,11 @@ body {
   }
 
   .benefit__subheading {
+    @include subheading;
     color: var(--color-subheading);
     font-weight: 800;
     text-transform: uppercase;
     width: 100%;
-
-    .satu-garis {
-      margin-left: calc(100% / 6);
-    }
   }
 
   .benefit__heading {
@@ -646,15 +643,13 @@ body {
   }
 
   .projects__subheading {
+    @include subheading;
+    justify-content: center;
     color: var(--color-subheading);
     font-weight: 800;
     text-transform: uppercase;
     text-align: center;
     width: 100%;
-
-    .satu-garis {
-      margin-left: 49vw;
-    }
   }
 
   .projects__heading {
@@ -744,15 +739,12 @@ body {
   }
   
   .products__subheading {
+    @include subheading;
     color: var(--color-subheading);
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 1.92px;
     width: 100%;
-
-    .satu-garis {
-      margin-left: 11vw;
-    }
   }
 
   .products__heading {
@@ -863,15 +855,12 @@ body {
   }
 
   .partners__subheading {
+    @include subheading;
     color: var(--color-subheading);
     font-size: $subheading-size-xxl;
     font-weight: 800;
     letter-spacing: 2.56px;
     text-transform: uppercase;
-
-    .satu-garis {
-      margin-left: 210px;
-    }
   }
 
   .partners__heading {
@@ -949,15 +938,13 @@ body {
   }
   
   .activity__subheading {
+    @include subheading;
+    justify-content: center;
     color: var(--color-subheading);
     font-size: $subheading-size-xxl;
     font-weight: 800;
     letter-spacing: 2.56px;
     text-transform: uppercase;
-
-    .satu-garis {
-      margin-left: 660px;
-    }
   }
 
   .activity__heading {
@@ -1436,6 +1423,7 @@ body {
 .modal {
   top: 50px;
 }
+
 .fade-up {
   top: 50px;
   opacity: 0;
@@ -1446,6 +1434,25 @@ body {
   &.show {
     opacity: 1;
     top: 0;
+  }
+}
+
+.transition__fadeup {
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-name: slideUp;
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -1639,11 +1646,6 @@ body {
     .about__subheading {
       font-size: $subheading-size-xxl;
       letter-spacing: 2.56px;
-      margin-bottom: 6px;
-
-      .satu-garis {
-        margin-left: 110px;
-      }
     }
 
     .about__heading {
@@ -1652,13 +1654,6 @@ body {
 
     .about__vision__container {
       padding: 60px $padding-container-xxl 120px;
-    }
-
-    .about__vision__subheading {
-
-      .satu-garis {
-        margin-left: 190px;
-      }
     }
   }
 
@@ -1679,10 +1674,6 @@ body {
     .benefit__subheading {
       font-size: $subheading-size-xxl;
       letter-spacing: 2.56px;
-
-      .satu-garis {
-        margin-left: 90px;
-      }
     }
 
     .benefit__heading {
@@ -1724,10 +1715,6 @@ body {
       color: var(--color-subheading);
       font-size: $subheading-size-xxl;
       letter-spacing: 2.56px;
-  
-      .satu-garis {
-        margin-left: 49vw;
-      }
     }
   
     .projects__heading {
@@ -1901,10 +1888,6 @@ body {
     .about__subheading {
       font-size: $subheading-size-xl;
       letter-spacing: 2px;
-
-      .satu-garis {
-        margin-left: 8vw;
-      }
     }
 
     .about__heading {
@@ -1925,13 +1908,6 @@ body {
     .about__image__cover-small {
       width: 160px;
     }
-
-    .about__vision__subheading {
-
-      .satu-garis {
-        margin-left: 14vw;
-      }
-    }
   }
 
   .benefit {
@@ -1943,10 +1919,6 @@ body {
     .benefit__subheading {
       font-size: $subheading-size-xl;
       letter-spacing: 2px;
-
-      .satu-garis {
-        margin-left: 7vw;
-      }
     }
 
     .benefit__heading {
@@ -1971,10 +1943,6 @@ body {
       color: var(--color-subheading);
       font-size: $subheading-size-xl;
       letter-spacing: 2px;
-  
-      .satu-garis {
-        margin-left: 50vw;
-      }
     }
   
     .projects__heading {
@@ -2022,10 +1990,6 @@ body {
     
     .products__subheading {
       font-size: $subheading-size-xl;
-
-      .satu-garis {
-        margin-left: 12vw;
-      }
     }
   
     .products__heading {
@@ -2376,10 +2340,6 @@ body {
     .projects__subheading {
       color: var(--color-subheading);
       font-size: $subheading-size-lg;
-  
-      .satu-garis {
-        margin-left: 52vw;
-      }
     }
   
     .projects__heading {
@@ -2428,10 +2388,6 @@ body {
     
     .products__subheading {
       font-size: $subheading-size-lg;
-
-      .satu-garis {
-        margin-left: 150px;
-      }
     }
   
     .products__heading {
@@ -2694,6 +2650,10 @@ body {
     width: 18vw;
     height: 100%;
   }
+  
+  .satu-garis {
+    width: 25px;
+  }
 
   .home {
     background-size: contain;
@@ -2765,6 +2725,7 @@ body {
 
     .about__subheading {
       font-size: $subheading-size-md;
+      gap: 12px;
     }
     
     .about__heading {
@@ -2800,6 +2761,7 @@ body {
 
     .about__vision__subheading {
       font-size: $subheading-size-md;
+      gap: 12px;
     }
 
     .about__vision__title {
@@ -2834,11 +2796,7 @@ body {
 
     .benefit__subheading {
       font-size: $subheading-size-md;
-      
-      .satu-garis {
-        margin-left: calc(100% / 5);
-        width: 3vw;
-      }
+      gap: 16px;
     }
 
     .benefit__heading {
@@ -2885,10 +2843,7 @@ body {
     .projects__subheading {
       color: var(--color-subheading);
       font-size: $subheading-size-md;
-  
-      .satu-garis {
-        margin-left: 56vw;
-      }
+      gap: 16px;
     }
   
     .projects__heading {
@@ -2949,10 +2904,7 @@ body {
     
     .products__subheading {
       font-size: $subheading-size-md;
-
-      .satu-garis {
-        margin-left: 140px;
-      }
+      gap: 16px;
     }
   
     .products__heading {
@@ -3022,6 +2974,7 @@ body {
     
     .partners__subheading {
       font-size: $subheading-size-md;
+      gap: 16px;
     }
 
     .partners__heading {
@@ -3059,6 +3012,7 @@ body {
 
     .activity__subheading {
       font-size: $subheading-size-md;
+      gap: 16px;
     }
 
     .activity__heading {
@@ -3271,6 +3225,10 @@ body {
     height: auto;
   }
 
+  .satu-garis {
+    width: 20px;
+  }
+
   .home {
     background-size: contain;
     background-position: center right;
@@ -3341,6 +3299,7 @@ body {
     
     .about__subheading {
       font-size: $subheading-size-sm;
+      gap: 10px;
     }
 
     .about__heading {
@@ -3377,6 +3336,7 @@ body {
       font-size: $subheading-size-sm;
       line-height: 1;
       letter-spacing: 1.5px;
+      gap: 10px;
     }
     
     .about__vision__title {
@@ -3411,11 +3371,7 @@ body {
 
     .benefit__subheading {
       font-size: $subheading-size-sm;
-      
-      .satu-garis {
-        margin-left: calc(100% / 5);
-        width: 3vw;
-      }
+      gap: 10px;
     }
 
     .benefit__heading {
@@ -3462,10 +3418,7 @@ body {
     .projects__subheading {
       color: var(--color-subheading);
       font-size: $subheading-size-sm;
-  
-      .satu-garis {
-        margin-left: 57vw;
-      }
+      gap: 10px;
     }
   
     .projects__heading {
@@ -3522,10 +3475,7 @@ body {
     
     .products__subheading {
       font-size: $subheading-size-sm;
-
-      .satu-garis {
-        margin-left: 140px;
-      }
+      gap: 10px;
     }
   
     .products__heading {
@@ -3595,6 +3545,7 @@ body {
     
     .partners__subheading {
       font-size: $subheading-size-sm;
+      gap: 10px;
     }
 
     .partners__heading {
@@ -3637,6 +3588,7 @@ body {
     
     .activity__subheading {
       font-size: $subheading-size-sm;
+      gap: 10px;
     }
     
     .activity__heading {
@@ -3976,10 +3928,7 @@ body {
     .about__subheading {
       font-size: $subheading-size-sm;
       letter-spacing: 1.92px;
-
-      .satu-garis {
-        margin-left: 85px;
-      }
+      gap: 12px;
     }
 
     .about__heading {
@@ -4045,10 +3994,7 @@ body {
     .about__vision__subheading {
       font-size: $subheading-size-sm;
       letter-spacing: 1.92px;
-
-      .satu-garis {
-        margin-left: 150px;
-      }
+      gap: 12px
     }
 
     .about__vision__title {
@@ -4092,10 +4038,7 @@ body {
     .benefit__subheading {
       font-size: 12px;
       letter-spacing: 1.92px;
-      
-      .satu-garis {
-        margin-left: 70px;
-      }
+      gap: 12px;
     }
 
     .benefit__heading {
@@ -4150,14 +4093,12 @@ body {
     }
   
     .projects__subheading {
+      justify-content: flex-start;
       color: var(--color-subheading);
       font-size: $subheading-size-sm;
       text-align: left;
       letter-spacing: 1.92px;
-  
-      .satu-garis {
-        margin-left: 150px;
-      }
+      gap: 12px;
     }
   
     .projects__heading {
@@ -4229,10 +4170,7 @@ body {
     .products__subheading {
       font-size: 12px;
       letter-spacing: 1.92px;
-
-      .satu-garis {
-        margin-left: 130px;
-      }
+      gap: 12px;
     }
   
     .products__heading {
@@ -4297,10 +4235,7 @@ body {
     .partners__subheading {
       font-size: 12px;
       letter-spacing: 1.92px;
-
-      .satu-garis {
-        margin-left: 170px;
-      }
+      gap: 12px;
     }
 
     .partners__heading {
@@ -4347,13 +4282,11 @@ body {
     }
 
     .activity__subheading {
+      justify-content: flex-start;
       font-size: 12px;
       text-align: left;
       letter-spacing: 1.92px;
-
-      .satu-garis {
-        margin-left: 100px;
-      }
+      gap: 12px;
     }
     
     .activity__heading {

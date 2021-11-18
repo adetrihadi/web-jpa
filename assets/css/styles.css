@@ -314,8 +314,6 @@ body {
   display: block;
   height: 3px;
   background: var(--color-light-blue);
-  margin-top: -8px;
-  margin-left: calc(100% / 4.5);
   width: 40px;
 }
 
@@ -517,14 +515,24 @@ body {
 }
 
 .about .about__subheading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
   color: var(--color-subheading);
   font-weight: 800;
   text-transform: uppercase;
   width: 100%;
-}
-
-.about .about__subheading .satu-garis {
-  margin-left: calc(100% / 4.3);
 }
 
 .about .about__heading {
@@ -644,15 +652,25 @@ body {
 }
 
 .about .about__vision__subheading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
   color: var(--color-white-40);
   font-size: 16px;
   font-weight: 800;
   letter-spacing: 2.5px;
   text-transform: uppercase;
-}
-
-.about .about__vision__subheading .satu-garis {
-  margin-left: calc(100% / 2);
 }
 
 .about .about__vision__title {
@@ -759,14 +777,24 @@ body {
 }
 
 .benefit .benefit__subheading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
   color: var(--color-subheading);
   font-weight: 800;
   text-transform: uppercase;
   width: 100%;
-}
-
-.benefit .benefit__subheading .satu-garis {
-  margin-left: calc(100% / 6);
 }
 
 .benefit .benefit__heading {
@@ -902,15 +930,28 @@ body {
 }
 
 .projects .projects__subheading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: var(--color-subheading);
   font-weight: 800;
   text-transform: uppercase;
   text-align: center;
   width: 100%;
-}
-
-.projects .projects__subheading .satu-garis {
-  margin-left: 49vw;
 }
 
 .projects .projects__heading {
@@ -1034,15 +1075,25 @@ body {
 }
 
 .products .products__subheading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
   color: var(--color-subheading);
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 1.92px;
   width: 100%;
-}
-
-.products .products__subheading .satu-garis {
-  margin-left: 11vw;
 }
 
 .products .products__heading {
@@ -1194,15 +1245,25 @@ body {
 }
 
 .partners .partners__subheading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
   color: var(--color-subheading);
   font-size: 16px;
   font-weight: 800;
   letter-spacing: 2.56px;
   text-transform: uppercase;
-}
-
-.partners .partners__subheading .satu-garis {
-  margin-left: 210px;
 }
 
 .partners .partners__heading {
@@ -1312,15 +1373,28 @@ body {
 }
 
 .activity .activity__subheading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: var(--color-subheading);
   font-size: 16px;
   font-weight: 800;
   letter-spacing: 2.56px;
   text-transform: uppercase;
-}
-
-.activity .activity__subheading .satu-garis {
-  margin-left: 660px;
 }
 
 .activity .activity__heading {
@@ -1948,6 +2022,45 @@ body {
   top: 0;
 }
 
+.transition__fadeup {
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+          animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-name: slideUp;
+          animation-name: slideUp;
+}
+
+@-webkit-keyframes slideUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(40%);
+            transform: translateY(40%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(40%);
+            transform: translateY(40%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
 @media screen and (min-width: 1501px) {
   .header .header__container {
     padding: 10px 140px;
@@ -2078,19 +2191,12 @@ body {
   .about .about__subheading {
     font-size: 16px;
     letter-spacing: 2.56px;
-    margin-bottom: 6px;
-  }
-  .about .about__subheading .satu-garis {
-    margin-left: 110px;
   }
   .about .about__heading {
     font-size: 36px;
   }
   .about .about__vision__container {
     padding: 60px 120px 120px;
-  }
-  .about .about__vision__subheading .satu-garis {
-    margin-left: 190px;
   }
   .benefit .benefit__container {
     padding: 120px 120px;
@@ -2104,9 +2210,6 @@ body {
   .benefit .benefit__subheading {
     font-size: 16px;
     letter-spacing: 2.56px;
-  }
-  .benefit .benefit__subheading .satu-garis {
-    margin-left: 90px;
   }
   .benefit .benefit__heading {
     font-size: 36px;
@@ -2140,9 +2243,6 @@ body {
     color: var(--color-subheading);
     font-size: 16px;
     letter-spacing: 2.56px;
-  }
-  .projects .projects__subheading .satu-garis {
-    margin-left: 49vw;
   }
   .projects .projects__heading {
     color: var(--color-black);
@@ -2263,9 +2363,6 @@ body {
     font-size: 16px;
     letter-spacing: 2px;
   }
-  .about .about__subheading .satu-garis {
-    margin-left: 8vw;
-  }
   .about .about__heading {
     font-size: 34px;
     line-height: 1.3;
@@ -2281,18 +2378,12 @@ body {
   .about .about__image__cover-small {
     width: 160px;
   }
-  .about .about__vision__subheading .satu-garis {
-    margin-left: 14vw;
-  }
   .benefit .benefit__container {
     padding: 100px 90px;
   }
   .benefit .benefit__subheading {
     font-size: 16px;
     letter-spacing: 2px;
-  }
-  .benefit .benefit__subheading .satu-garis {
-    margin-left: 7vw;
   }
   .benefit .benefit__heading {
     font-size: 34px;
@@ -2315,9 +2406,6 @@ body {
     color: var(--color-subheading);
     font-size: 16px;
     letter-spacing: 2px;
-  }
-  .projects .projects__subheading .satu-garis {
-    margin-left: 50vw;
   }
   .projects .projects__heading {
     color: var(--color-black);
@@ -2352,9 +2440,6 @@ body {
   }
   .products .products__subheading {
     font-size: 16px;
-  }
-  .products .products__subheading .satu-garis {
-    margin-left: 12vw;
   }
   .products .products__heading {
     font-size: 34px;
@@ -2601,9 +2686,6 @@ body {
     color: var(--color-subheading);
     font-size: 14px;
   }
-  .projects .projects__subheading .satu-garis {
-    margin-left: 52vw;
-  }
   .projects .projects__heading {
     color: var(--color-black);
     font-size: 32px;
@@ -2638,9 +2720,6 @@ body {
   }
   .products .products__subheading {
     font-size: 14px;
-  }
-  .products .products__subheading .satu-garis {
-    margin-left: 150px;
   }
   .products .products__heading {
     font-size: 32px;
@@ -2827,6 +2906,9 @@ body {
     width: 18vw;
     height: 100%;
   }
+  .satu-garis {
+    width: 25px;
+  }
   .home {
     background-size: contain;
     background-position: center right;
@@ -2876,6 +2958,7 @@ body {
   }
   .about .about__subheading {
     font-size: 14px;
+    gap: 12px;
   }
   .about .about__heading {
     font-size: 20px;
@@ -2903,6 +2986,7 @@ body {
   }
   .about .about__vision__subheading {
     font-size: 14px;
+    gap: 12px;
   }
   .about .about__vision__title {
     font-size: 18px;
@@ -2927,10 +3011,7 @@ body {
   }
   .benefit .benefit__subheading {
     font-size: 14px;
-  }
-  .benefit .benefit__subheading .satu-garis {
-    margin-left: calc(100% / 5);
-    width: 3vw;
+    gap: 16px;
   }
   .benefit .benefit__heading {
     font-size: 30px;
@@ -2966,9 +3047,7 @@ body {
   .projects .projects__subheading {
     color: var(--color-subheading);
     font-size: 14px;
-  }
-  .projects .projects__subheading .satu-garis {
-    margin-left: 56vw;
+    gap: 16px;
   }
   .projects .projects__heading {
     color: var(--color-black);
@@ -3013,9 +3092,7 @@ body {
   }
   .products .products__subheading {
     font-size: 14px;
-  }
-  .products .products__subheading .satu-garis {
-    margin-left: 140px;
+    gap: 16px;
   }
   .products .products__heading {
     font-size: 23px;
@@ -3069,6 +3146,7 @@ body {
   }
   .partners .partners__subheading {
     font-size: 14px;
+    gap: 16px;
   }
   .partners .partners__heading {
     font-size: 30px;
@@ -3096,6 +3174,7 @@ body {
   }
   .activity .activity__subheading {
     font-size: 14px;
+    gap: 16px;
   }
   .activity .activity__heading {
     font-size: 30px;
@@ -3243,6 +3322,9 @@ body {
     width: 20vw;
     height: auto;
   }
+  .satu-garis {
+    width: 20px;
+  }
   .home {
     background-size: contain;
     background-position: center right;
@@ -3292,6 +3374,7 @@ body {
   }
   .about .about__subheading {
     font-size: 12px;
+    gap: 10px;
   }
   .about .about__heading {
     font-size: 18px;
@@ -3320,6 +3403,7 @@ body {
     font-size: 12px;
     line-height: 1;
     letter-spacing: 1.5px;
+    gap: 10px;
   }
   .about .about__vision__title {
     font-size: 16px;
@@ -3344,10 +3428,7 @@ body {
   }
   .benefit .benefit__subheading {
     font-size: 12px;
-  }
-  .benefit .benefit__subheading .satu-garis {
-    margin-left: calc(100% / 5);
-    width: 3vw;
+    gap: 10px;
   }
   .benefit .benefit__heading {
     font-size: 18px;
@@ -3383,9 +3464,7 @@ body {
   .projects .projects__subheading {
     color: var(--color-subheading);
     font-size: 12px;
-  }
-  .projects .projects__subheading .satu-garis {
-    margin-left: 57vw;
+    gap: 10px;
   }
   .projects .projects__heading {
     color: var(--color-black);
@@ -3427,9 +3506,7 @@ body {
   }
   .products .products__subheading {
     font-size: 12px;
-  }
-  .products .products__subheading .satu-garis {
-    margin-left: 140px;
+    gap: 10px;
   }
   .products .products__heading {
     font-size: 18px;
@@ -3483,6 +3560,7 @@ body {
   }
   .partners .partners__subheading {
     font-size: 12px;
+    gap: 10px;
   }
   .partners .partners__heading {
     font-size: 28px;
@@ -3514,6 +3592,7 @@ body {
   }
   .activity .activity__subheading {
     font-size: 12px;
+    gap: 10px;
   }
   .activity .activity__heading {
     font-size: 28px;
@@ -3782,9 +3861,7 @@ body {
   .about .about__subheading {
     font-size: 12px;
     letter-spacing: 1.92px;
-  }
-  .about .about__subheading .satu-garis {
-    margin-left: 85px;
+    gap: 12px;
   }
   .about .about__heading {
     font-size: 24px;
@@ -3850,9 +3927,7 @@ body {
   .about .about__vision__subheading {
     font-size: 12px;
     letter-spacing: 1.92px;
-  }
-  .about .about__vision__subheading .satu-garis {
-    margin-left: 150px;
+    gap: 12px;
   }
   .about .about__vision__title {
     font-size: 20px;
@@ -3894,9 +3969,7 @@ body {
   .benefit .benefit__subheading {
     font-size: 12px;
     letter-spacing: 1.92px;
-  }
-  .benefit .benefit__subheading .satu-garis {
-    margin-left: 70px;
+    gap: 12px;
   }
   .benefit .benefit__heading {
     font-size: 24px;
@@ -3941,13 +4014,14 @@ body {
     gap: 16px;
   }
   .projects .projects__subheading {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     color: var(--color-subheading);
     font-size: 12px;
     text-align: left;
     letter-spacing: 1.92px;
-  }
-  .projects .projects__subheading .satu-garis {
-    margin-left: 150px;
+    gap: 12px;
   }
   .projects .projects__heading {
     color: var(--color-black);
@@ -4011,9 +4085,7 @@ body {
   .products .products__subheading {
     font-size: 12px;
     letter-spacing: 1.92px;
-  }
-  .products .products__subheading .satu-garis {
-    margin-left: 130px;
+    gap: 12px;
   }
   .products .products__heading {
     font-size: 24px;
@@ -4065,9 +4137,7 @@ body {
   .partners .partners__subheading {
     font-size: 12px;
     letter-spacing: 1.92px;
-  }
-  .partners .partners__subheading .satu-garis {
-    margin-left: 170px;
+    gap: 12px;
   }
   .partners .partners__heading {
     font-size: 24px;
@@ -4106,12 +4176,13 @@ body {
     padding: 0;
   }
   .activity .activity__subheading {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     font-size: 12px;
     text-align: left;
     letter-spacing: 1.92px;
-  }
-  .activity .activity__subheading .satu-garis {
-    margin-left: 100px;
+    gap: 12px;
   }
   .activity .activity__heading {
     font-size: 24px;
