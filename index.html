@@ -213,7 +213,7 @@
               Be part of business partners and projects across transportation by providing solutions and services for users' needs
             </p>
           </div>
-          <div id="projectTransportation" class="projects__list">
+          <div id="projectTransportation" class="projects__list owl-carousel owl-loaded owl-theme owl-drag">
             <div class="projects__list__item">
               <img src="assets/images/logo-jaklingko@2x.png" class="projects__logo" alt="">
             </div>
@@ -226,7 +226,7 @@
           </div>
         </div>
         <div class="projects__box">
-          <div id="projectEssential" class="projects__list order-2 order-sm-1">
+          <div id="projectEssential" class="projects__list owl-carousel owl-loaded owl-theme owl-drag order-2 order-sm-1">
             <div class="projects__list__item">
               <img src="assets/images/logo-pln@2x.png" class="projects__logo" alt="">
             </div>
@@ -255,7 +255,7 @@
               Become a facilitator for Telco Billing in easy and safe payment transactions
             </p>
           </div>
-          <div id="projectTelco" class="projects__list">
+          <div id="projectTelco" class="projects__list owl-carousel owl-loaded owl-theme owl-drag">
             <div class="projects__list__item">
               <img src="assets/images/logo-telkom-indonesia@2x.png" class="projects__logo" alt="">
             </div>
@@ -268,7 +268,7 @@
           </div>
         </div>
         <div class="projects__box">
-          <div id="projectResidency" class="projects__list order-2 order-sm-1">
+          <div id="projectResidency" class="projects__list owl-carousel owl-loaded owl-theme owl-drag order-2 order-sm-1">
             <div class="projects__list__item">
               <img src="assets/images/logo-beranda-mas@2x.png" class="projects__logo" alt="">
             </div>
@@ -900,6 +900,7 @@
           }
         }
       });
+      checkProjectLength();
       $(".partners__button").on("click", function(event) {
         event.preventDefault();
         if ($("#modalViewAll .modal__view__item").length == 0) {
@@ -983,20 +984,30 @@
       el.owlCarousel({
         loop: true,
         items: 3,
-        margin: 32,
+        margin: 40,
         autoplay: true,
         autoWidth: false,
         nav: false,
         dots: false,
-        stagePadding: 25,
         responsive: {
           0: {
-            items: 3,
-            margin: 12
+            margin: 12,
+            center: true
           },
-          600: {
-            items: 3,
+          400: {
+            margin: 18
+          },
+          700: {
+            margin: 24
+          },
+          800: {
             margin: 30
+          },
+          900: {
+            margin: 40
+          },
+          1400: {
+            margin: 42
           }
         }
       });
