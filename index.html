@@ -213,7 +213,7 @@
               Be part of business partners and projects across transportation by providing solutions and services for users' needs
             </p>
           </div>
-          <div class="projects__list">
+          <div id="projectTransportation" class="projects__list">
             <div class="projects__list__item">
               <img src="assets/images/logo-jaklingko@2x.png" class="projects__logo" alt="">
             </div>
@@ -226,7 +226,7 @@
           </div>
         </div>
         <div class="projects__box">
-          <div class="projects__list order-2 order-sm-1">
+          <div id="projectEssential" class="projects__list order-2 order-sm-1">
             <div class="projects__list__item">
               <img src="assets/images/logo-pln@2x.png" class="projects__logo" alt="">
             </div>
@@ -255,7 +255,7 @@
               Become a facilitator for Telco Billing in easy and safe payment transactions
             </p>
           </div>
-          <div class="projects__list">
+          <div id="projectTelco" class="projects__list">
             <div class="projects__list__item">
               <img src="assets/images/logo-telkom-indonesia@2x.png" class="projects__logo" alt="">
             </div>
@@ -268,7 +268,7 @@
           </div>
         </div>
         <div class="projects__box">
-          <div class="projects__list order-2 order-sm-1">
+          <div id="projectResidency" class="projects__list order-2 order-sm-1">
             <div class="projects__list__item">
               <img src="assets/images/logo-beranda-mas@2x.png" class="projects__logo" alt="">
             </div>
@@ -667,7 +667,7 @@
     </div>
   </footer>
 
-  <div class="modal fade modal__contact" id="modalContactForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade-up modal__contact" id="modalContactForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
       <div class="modal-content">
         <div class="close" data-bs-dismiss="modal">
@@ -734,7 +734,7 @@
     </div>
   </div>
 
-  <div class="modal fade modal__view" id="modalViewAll" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade-up modal__view" id="modalViewAll" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
       <div class="modal-content">
         <div class="close" data-bs-dismiss="modal">
@@ -969,6 +969,37 @@
       } else {
         $(".products__navigation__prev").removeClass("disabled");
       }
+    }
+    function checkProjectLength() {
+      const parent = document.querySelectorAll(".projects__list");
+      parent.forEach(element => {
+        if (element.childElementCount > 3) {
+          initSlide(element);
+        }
+      });
+    }
+    function initSlide(element) {
+      const el = $(`#${element.id}`);
+      el.owlCarousel({
+        loop: true,
+        items: 3,
+        margin: 32,
+        autoplay: true,
+        autoWidth: false,
+        nav: false,
+        dots: false,
+        stagePadding: 25,
+        responsive: {
+          0: {
+            items: 3,
+            margin: 12
+          },
+          600: {
+            items: 3,
+            margin: 30
+          }
+        }
+      });
     }
   </script>
 </body>
