@@ -1,0 +1,438 @@
+{
+  "bank": [
+    {
+      "id": 1,
+      "category": 1,
+      "name": "Bank Mandiri",
+      "image": "assets/images/partners/logo-mandiri@2x.png"
+    },
+    {
+      "id": 2,
+      "category": 1,
+      "name": "Bank BSI",
+      "image": "assets/images/partners/logo-bsi@2x.png"
+    },
+    {
+      "id": 3,
+      "category": 1,
+      "name": "Bank BRI",
+      "image": "assets/images/partners/logo-bri@2x.png"
+    },
+    {
+      "id": 4,
+      "category": 1,
+      "name": "Bank BNI",
+      "image": "assets/images/partners/logo-bni@2x.png"
+    },
+    {
+      "id": 5,
+      "category": 1,
+      "name": "Bank CIMB",
+      "image": "assets/images/partners/logo-cimb-niaga@2x.png"
+    },
+    {
+      "id": 6,
+      "category": 1,
+      "name": "Bank Agi",
+      "image": "assets/images/partners/logo-agi@2x.png"
+    },
+    {
+      "id": 7,
+      "category": 1,
+      "name": "Bank BCA",
+      "image": "assets/images/partners/logo-bca@2x.png"
+    },
+    {
+      "id": 8,
+      "category": 1,
+      "name": "Bank Permata",
+      "image": "assets/images/partners/logo-permata@2x.png"
+    },
+    {
+      "id": 9,
+      "category": 1,
+      "name": "Bank Jateng",
+      "image": "assets/images/partners/logo-jateng@2x.png"
+    },
+    {
+      "id": 10,
+      "category": 1,
+      "name": "Bank OCBC NISP",
+      "image": "assets/images/partners/logo-ocbc-nisp@2x.png"
+    },
+    {
+      "id": 11,
+      "category": 1,
+      "name": "Bank Mega",
+      "image": "assets/images/partners/logo-mega@2x.png"
+    },
+    {
+      "id": 12,
+      "category": 1,
+      "name": "Bank Kalbra",
+      "image": "assets/images/partners/logo-kalbar@2x.png"
+    },
+    {
+      "id": 13,
+      "category": 1,
+      "name": "Bank Nobu",
+      "image": "assets/images/partners/logo-nobu@2x.png"
+    },
+    {
+      "id": 14,
+      "category": 1,
+      "name": "Bank BTPN",
+      "image": "assets/images/partners/log-btpn@2x.png"
+    },
+    {
+      "id": 15,
+      "category": 1,
+      "name": "Bank Sultra",
+      "image": "assets/images/partners/logo-sultra@2x.png"
+    },
+    {
+      "id": 16,
+      "category": 1,
+      "name": "Bank Doku",
+      "image": "assets/images/partners/logo-doku@2x.png"
+    },
+    {
+      "id": 17,
+      "category": 1,
+      "name": "Bank LinkAja",
+      "image": "assets/images/partners/logo-linkaja@2x.png"
+    },
+    {
+      "id": 18,
+      "category": 1,
+      "name": "Dana",
+      "image": "assets/images/partners/logo-dana@2x.png"
+    },
+    {
+      "id": 19,
+      "category": 1,
+      "name": "Paytren",
+      "image": "assets/images/partners/logo-paytren@2x.png"
+    },
+    {
+      "id": 20,
+      "category": 1,
+      "name": "Jalin",
+      "image": "assets/images/partners/logo-jalin@2x.png"
+    },
+    {
+      "id": 21,
+      "category": 1,
+      "name": "Alto",
+      "image": "assets/images/partners/logo-alto@2x.png"
+    }
+  ],
+  "retail": [
+    {
+      "id": 1,
+      "category": 2,
+      "name": "Super Indo",
+      "image": "assets/images/partners/logo-super-indo@2x.png"
+    },
+    {
+      "id": 2,
+      "category": 2,
+      "name": "Circle K",
+      "image": "assets/images/partners/logo-circle-k@2x.png"
+    },
+    {
+      "id": 3,
+      "category": 2,
+      "name": "Apotek K24",
+      "image": "assets/images/partners/logo-apotek-k24@2x.png"
+    },
+    {
+      "id": 4,
+      "category": 2,
+      "name": "Alfamart",
+      "image": "assets/images/partners/logo-alfamart@2x.png"
+    },
+    {
+      "id": 5,
+      "category": 2,
+      "name": "Indomaret",
+      "image": "assets/images/partners/logo-indomaret@2x.png"
+    },
+    {
+      "id": 6,
+      "category": 2,
+      "name": "Puskud Sumbar",
+      "image": "assets/images/partners/logo-puskud-sumbar@2x.png"
+    },
+    {
+      "id": 7,
+      "category": 2,
+      "name": "Tokopedia",
+      "image": "assets/images/partners/logo-tokopedia@2x.png"
+    },
+    {
+      "id": 8,
+      "category": 2,
+      "name": "Bukalapak",
+      "image": "assets/images/partners/logo-bukalapak@2x.png"
+    },
+    {
+      "id": 9,
+      "category": 2,
+      "name": "Puskud Jateng",
+      "image": "assets/images/partners/logo-puskud-jateng@2x.png"
+    }
+  ],
+  "transport": [
+    {
+      "id": 1,
+      "category": 3,
+      "name": "Jak Lingko",
+      "image": "assets/images/partners/logo-jak-lingko@2x.png"
+    },
+    {
+      "id": 2,
+      "category": 3,
+      "name": "Transjakarta",
+      "image": "assets/images/partners/logo-transjakarta@2x.png"
+    },
+    {
+      "id": 3,
+      "category": 3,
+      "name": "Commuterline",
+      "image": "assets/images/partners/logo-commuterline@2x.png"
+    },
+    {
+      "id": 4,
+      "category": 3,
+      "name": "MRT Jakarta",
+      "image": "assets/images/partners/logo-mrt-jakarta@2x.png"
+    },
+    {
+      "id": 5,
+      "category": 3,
+      "name": "LRT Jakarta",
+      "image": "assets/images/partners/logo-lrt-jakarta@2x.png"
+    },
+    {
+      "id": 6,
+      "category": 3,
+      "name": "Railink",
+      "image": "assets/images/partners/logo-railink@2x.png"
+    },
+    {
+      "id": 7,
+      "category": 3,
+      "name": "Kereta Api",
+      "image": "assets/images/partners/logo-kereta-api@2x.png"
+    },
+    {
+      "id": 8,
+      "category": 3,
+      "name": "Garuda Indonesia",
+      "image": "assets/images/partners/logo-garuda-indonesia@2x.png"
+    },
+    {
+      "id": 9,
+      "category": 3,
+      "name": "Citilink",
+      "image": "assets/images/partners/logo-citilink@2x.png"
+    },
+    {
+      "id": 10,
+      "category": 3,
+      "name": "Asia Air",
+      "image": "assets/images/partners/logo-air-asia@2x.png"
+    },
+    {
+      "id": 11,
+      "category": 3,
+      "name": "Lion Air",
+      "image": "assets/images/partners/logo-lion-air@2x.png"
+    },
+    {
+      "id": 12,
+      "category": 3,
+      "name": "Sky Aviation",
+      "image": "assets/images/partners/logo-sky-aviation@2x.png"
+    }
+  ],
+  "biller": [
+    {
+      "id": 1,
+      "category": 4,
+      "name": "PLN",
+      "image": "assets/images/partners/logo-pln@2x.png"
+    },
+    {
+      "id": 2,
+      "category": 4,
+      "name": "BPJS Kesehatan",
+      "image": "assets/images/partners/logo-bpjs-kesehatan@2x.png"
+    },
+    {
+      "id": 3,
+      "category": 4,
+      "name": "PDAM",
+      "image": "assets/images/partners/logo-pdam@2x.png"
+    },
+    {
+      "id": 4,
+      "category": 4,
+      "name": "Pegadaian",
+      "image": "assets/images/partners/logo-pegadaian@2x.png"
+    },
+    {
+      "id": 5,
+      "category": 4,
+      "name": "BPJS Ketenagakerjaan",
+      "image": "assets/images/partners/logo-bpjs-ketenagakerjaan@2x.png"
+    },
+    {
+      "id": 6,
+      "category": 4,
+      "name": "Telkom Indonesia",
+      "image": "assets/images/partners/logo-telkom-indonesia@2x.png"
+    },
+    {
+      "id": 7,
+      "category": 4,
+      "name": "Tirta Dharma",
+      "image": "assets/images/partners/logo-tirta-dharma@2x.png"
+    },
+    {
+      "id": 8,
+      "category": 4,
+      "name": "Indosat",
+      "image": "assets/images/partners/logo-indosat@2x.png"
+    },
+    {
+      "id": 9,
+      "category": 4,
+      "name": "MCF",
+      "image": "assets/images/partners/logo-mcf@2x.png"
+    },
+    {
+      "id": 10,
+      "category": 4,
+      "name": "XL Axiata",
+      "image": "assets/images/partners/logo-xl@2x.png"
+    },
+    {
+      "id": 11,
+      "category": 4,
+      "name": "Baznas",
+      "image": "assets/images/partners/logo-baznas@2x.png"
+    },
+    {
+      "id": 12,
+      "category": 4,
+      "name": "Telkomsel",
+      "image": "assets/images/partners/logo-telkomsel@2x.png"
+    },
+    {
+      "id": 13,
+      "category": 4,
+      "name": "Dompet Dhuafa",
+      "image": "assets/images/partners/logo-dompet-dhuafa@2x.png"
+    },
+    {
+      "id": 14,
+      "category": 4,
+      "name": "BAF",
+      "image": "assets/images/partners/logo-baf@2x.png"
+    },
+    {
+      "id": 15,
+      "category": 4,
+      "name": "Adira Finance",
+      "image": "assets/images/partners/logo-adira-finance@2x.png"
+    },
+    {
+      "id": 16,
+      "category": 4,
+      "name": "Axis",
+      "image": "assets/images/partners/logo-exis@2x.png"
+    },
+    {
+      "id": 17,
+      "category": 4,
+      "name": "Tri Indonesia",
+      "image": "assets/images/partners/logo-tri@2x.png"
+    },
+    {
+      "id": 18,
+      "category": 4,
+      "name": "Mega Finance",
+      "image": "assets/images/partners/logo-mega-finance@2x.png"
+    },
+    {
+      "id": 19,
+      "category": 4,
+      "name": "Smartfren",
+      "image": "assets/images/partners/logo-smartfren@2x.png"
+    },
+    {
+      "id": 20,
+      "category": 4,
+      "name": "FIF",
+      "image": "assets/images/partners/logo-fif@2x.png"
+    },
+    {
+      "id": 21,
+      "category": 4,
+      "name": "Wom Finance",
+      "image": "assets/images/partners/logo-wom-finance@2x.png"
+    }
+  ],
+  "community": [
+    {
+      "id": 1,
+      "category": 5,
+      "name": "Jak Lingko Community",
+      "image": "assets/images/partners/logo-jak-lingko-community@2x.png"
+    },
+    {
+      "id": 2,
+      "category": 5,
+      "name": "Gemawira",
+      "image": "assets/images/partners/logo-gemawira@2x.png"
+    },
+    {
+      "id": 3,
+      "category": 5,
+      "name": "Mes",
+      "image": "assets/images/partners/logo-mes@2x.png"
+    },
+    {
+      "id": 4,
+      "category": 5,
+      "name": "Sahabat BWI",
+      "image": "assets/images/partners/logo-sahabatbwi@2x.png"
+    },
+    {
+      "id": 5,
+      "category": 5,
+      "name": "+62 Bikers",
+      "image": "assets/images/partners/logo-bikers@2x.png"
+    },
+    {
+      "id": 6,
+      "category": 5,
+      "name": "Bescout Indonesia",
+      "image": "assets/images/partners/logo-bescout@2x.png"
+    },
+    {
+      "id": 7,
+      "category": 5,
+      "name": "Sportlink Media",
+      "image": "assets/images/partners/logo-sportlink-media@2x.png"
+    },
+    {
+      "id": 8,
+      "category": 5,
+      "name": "Bintaro Trojan",
+      "image": "assets/images/partners/logo-bintaro-trojan@2x.png"
+    }
+  ]
+}
