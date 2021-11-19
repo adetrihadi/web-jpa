@@ -1023,12 +1023,12 @@ body {
     height: 8px;
     border-radius: 50%;
     margin: 4px;
+    transition: all 300ms ease;
 
     &.active {
       background: var(--color-light-blue) !important;
       width: 24px;
       border-radius: 8px;
-      transition: all 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
     }
   }
 }
@@ -4210,12 +4210,12 @@ body {
       height: 8px;
       border-radius: 50%;
       margin: 4px;
+      transition: all 300ms ease;
 
       &.active {
         background: var(--color-light-blue) !important;
         width: 24px;
         border-radius: 8px;
-        transition: all 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
       }
     }
   }

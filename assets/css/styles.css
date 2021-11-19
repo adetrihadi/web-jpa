@@ -1491,14 +1491,14 @@ body {
   height: 8px;
   border-radius: 50%;
   margin: 4px;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
 }
 
 .activity .owl-dot.active {
   background: var(--color-light-blue) !important;
   width: 24px;
   border-radius: 8px;
-  -webkit-transition: all 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
-  transition: all 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
 }
 
 .ic-arrow {
@@ -4116,13 +4116,13 @@ body {
     height: 8px;
     border-radius: 50%;
     margin: 4px;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
   }
   .owl-carousel .owl-dot.active {
     background: var(--color-light-blue) !important;
     width: 24px;
     border-radius: 8px;
-    -webkit-transition: all 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
-    transition: all 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
   }
   .partners .partners__container {
     padding: 60px 20px;
