@@ -307,7 +307,7 @@
                 </clipPath>
               </defs>
               <g style="clip-path:url(#a)">
-                <path data-name="Path 32112" d="M17.384 21.011a1.249 1.249 0 0 1-1.77 0L7.3 12.7a1 1 0 0 1 0-1.41l8.31-8.31a1.252 1.252 0 1 1 1.77 1.77L10.144 12l7.25 7.25a1.246 1.246 0 0 1-.01 1.761z" transform="translate(-.011 .388)" style="fill:#0c142c"/>
+                <path data-name="Path 32112" d="M17.384 21.011a1.249 1.249 0 0 1-1.77 0L7.3 12.7a1 1 0 0 1 0-1.41l8.31-8.31a1.252 1.252 0 1 1 1.77 1.77L10.144 12l7.25 7.25a1.246 1.246 0 0 1-.01 1.761z" transform="translate(-.011 .388)"/>
               </g>
             </svg>
           </button>
@@ -319,7 +319,7 @@
                 </clipPath>
               </defs>
               <g style="clip-path:url(#a)">
-                <path data-name="Path 32113" d="M7.355 20.26a1.139 1.139 0 0 0 1.645 0l7.737-7.971a.976.976 0 0 0 0-1.353L9 2.965a1.139 1.139 0 0 0-1.648 0 1.224 1.224 0 0 0 0 1.7l6.74 6.954-6.75 6.954a1.221 1.221 0 0 0 .013 1.687z" transform="translate(-.011 .388)" style="fill:#0c142c"/>
+                <path data-name="Path 32113" d="M7.355 20.26a1.139 1.139 0 0 0 1.645 0l7.737-7.971a.976.976 0 0 0 0-1.353L9 2.965a1.139 1.139 0 0 0-1.648 0 1.224 1.224 0 0 0 0 1.7l6.74 6.954-6.75 6.954a1.221 1.221 0 0 0 .013 1.687z" transform="translate(-.011 .388)"/>
               </g>
             </svg>
           </button>
@@ -347,8 +347,8 @@
                         </clipPath>
                       </defs>
                       <g data-name="Group 9276" transform="translate(-4 -4)" style="clip-path:url(#a)">
-                        <path data-name="Path 32111" d="M7.793 8.21a.788.788 0 0 0-1.071 0 .685.685 0 0 0 0 1.01L9.668 12 6.73 14.779a.687.687 0 0 0 0 1.011.787.787 0 0 0 1.063.007l3.485-3.289a.685.685 0 0 0 0-1.01z"/>
-                        <path data-name="Path 32112" d="m17.234 11.373-4.183-4.111a.918.918 0 0 0-1.284 0 .88.88 0 0 0 0 1.263L15.3 12l-3.526 3.475a.88.88 0 0 0 0 1.263.916.916 0 0 0 1.275.009l4.183-4.111a.881.881 0 0 0 .002-1.263z"/>
+                        <path class="arrow-right" data-name="Path 32111" d="M7.793 8.21a.788.788 0 0 0-1.071 0 .685.685 0 0 0 0 1.01L9.668 12 6.73 14.779a.687.687 0 0 0 0 1.011.787.787 0 0 0 1.063.007l3.485-3.289a.685.685 0 0 0 0-1.01z"/>
+                        <path class="arrow-right" data-name="Path 32112" d="m17.234 11.373-4.183-4.111a.918.918 0 0 0-1.284 0 .88.88 0 0 0 0 1.263L15.3 12l-3.526 3.475a.88.88 0 0 0 0 1.263.916.916 0 0 0 1.275.009l4.183-4.111a.881.881 0 0 0 .002-1.263z"/>
                       </g>
                     </svg>
                   </a>
@@ -576,17 +576,6 @@
             </h3>
             <span class="activity__slider__date">
               10 November 2021
-            </span>
-          </div>
-        </div>
-        <div class="activity__slider__item">
-          <img src="assets/images/activity-2.png" class="activity__slider__image" alt="activity-1">
-          <div class="activity__slider__description">
-            <h3 class="activity__slider__title">
-              Event perkenalan aplikasi JakLingko
-            </h3>
-            <span class="activity__slider__date">
-              09 November 2021
             </span>
           </div>
         </div>
@@ -888,15 +877,18 @@
         loop: true,
         margin: 10,
         dots: true,
+        startPosition: 2,
         responsive: {
           0: {
             items: 1,
+            nav: false
           },
           600: {
             items: 3,
             margin: 32,
             autoWidth: true,
-            center: true
+            center: true,
+            nav: true
           }
         }
       });
