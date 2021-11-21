@@ -223,6 +223,9 @@
             <div class="projects__list__item">
               <img src="assets/images/logo-mrt-jakarta@2x.png" class="projects__logo" alt="">
             </div>
+            <div class="projects__list__item">
+              <img src="assets/images/logo-transjakarta@2x.png" class="projects__logo" alt="">
+            </div>
           </div>
         </div>
         <div class="projects__box">
@@ -811,7 +814,7 @@
         $target = $(target);
         $('html, body').stop().animate({
           'scrollTop': $target.offset().top + 2
-        }, 500, 'swing', function () {
+        }, 0, 'swing', function () {
           window.location.hash = target;
           $(document).on("scroll", onScroll);
         });
@@ -941,7 +944,7 @@
       $(".header__menu__list .header__menu__item a").each(function () {
         let currLink = $(this);
         let refElement = $(currLink.attr("href"));
-        if (refElement.offset().top - 100 <= scrollPos && refElement.offset().top + refElement.height() > scrollPos) {
+        if (refElement.offset().top <= scrollPos && refElement.offset().top + refElement.height() > scrollPos) {
           $(".header__menu__list li a").removeClass("header__menu__link-active");
           currLink.addClass("header__menu__link-active");
         }
@@ -978,6 +981,8 @@
         items: 3,
         margin: 40,
         autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
         autoWidth: false,
         nav: false,
         dots: false,
