@@ -3963,6 +3963,11 @@ body {
 
         .header__menu__item-mobile {
           display: flex;
+
+          .btn__cta {
+            width: 180px;
+            height: auto;
+          }
         }
 
         .header__menu__item {

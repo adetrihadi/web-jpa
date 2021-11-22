@@ -3933,6 +3933,10 @@ body {
     display: -ms-flexbox;
     display: flex;
   }
+  .header .header__menu .header__menu__list .header__menu__item-mobile .btn__cta {
+    width: 180px;
+    height: auto;
+  }
   .header .header__menu .header__menu__list .header__menu__item .header__menu__link-active:after {
     margin-left: 0;
   }
