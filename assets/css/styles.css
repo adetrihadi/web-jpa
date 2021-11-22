@@ -2379,10 +2379,10 @@ body {
     font-size: 36px;
   }
   .about .about__vision__container {
-    padding: 60px 120px;
+    padding: 60px 120px 0;
   }
   .benefit .benefit__container {
-    padding: 60px 120px 120px;
+    padding: 120px 120px;
   }
   .benefit .benefit__image {
     width: 540px;
@@ -2473,6 +2473,12 @@ body {
   }
   .products .products__list {
     padding: 0 0 0 25px;
+  }
+  .partners .partners__container {
+    padding: 120px 120px 0;
+  }
+  .activity .activity__header {
+    padding: 120px 120px 0 120px;
   }
   .modal__contact:before {
     content: "";
@@ -4150,7 +4156,7 @@ body {
     grid-area: about__image__cover-small-2;
   }
   .about .about__vision__container {
-    padding: 40px 20px 40px;
+    padding: 40px 20px 0;
   }
   .about .about__vision__content {
     -webkit-box-orient: vertical;
@@ -4187,7 +4193,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 40px 20px 60px;
+    padding: 80px 20px 60px;
     gap: 32px;
   }
   .benefit .benefit__image {
@@ -4386,7 +4392,7 @@ body {
     border-radius: 8px;
   }
   .partners .partners__container {
-    padding: 60px 20px 30px;
+    padding: 60px 20px 0;
     gap: 32px;
   }
   .partners .partners__header {
@@ -4434,7 +4440,7 @@ body {
   }
   .activity .activity__header {
     gap: 16px;
-    padding: 30px 20px 0;
+    padding: 70px 20px 0;
   }
   .activity .activity__subheading {
     -webkit-box-pack: start;

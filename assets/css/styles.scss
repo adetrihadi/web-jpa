@@ -1805,14 +1805,14 @@ body {
     }
 
     .about__vision__container {
-      padding: 60px $padding-container-xxl;
+      padding: 60px $padding-container-xxl 0;
     }
   }
 
   .benefit {
 
     .benefit__container {
-      padding: 60px $padding-container-xxl 120px;
+      padding: 120px $padding-container-xxl;
     }
 
     .benefit__image {
@@ -1931,6 +1931,20 @@ body {
     
     .products__list {
       padding: 0 0 0 25px;
+    }
+  }
+
+  .partners {
+
+    .partners__container {
+      padding: $padding-container-xxl $padding-container-xxl 0;
+    }
+  }
+
+  .activity {
+
+    .activity__header {
+      padding: $padding-container-xxl $padding-container-xxl 0 $padding-container-xxl
     }
   }
 
@@ -4197,7 +4211,7 @@ body {
     }
 
     .about__vision__container {
-      padding: 40px $padding-container-sm 40px;
+      padding: 40px $padding-container-sm 0;
     }
 
     .about__vision__content {
@@ -4236,7 +4250,7 @@ body {
 
     .benefit__container {
       flex-direction: column;
-      padding: 40px $padding-container-sm 60px;
+      padding: 80px $padding-container-sm 60px;
       gap: 32px;
     }
 
@@ -4466,7 +4480,7 @@ body {
   .partners {
 
     .partners__container {
-      padding: 60px $padding-container-sm 30px;
+      padding: 60px $padding-container-sm 0;
       gap: 32px;
     }
 
@@ -4521,7 +4535,7 @@ body {
 
     .activity__header {
       gap: 16px;
-      padding: 30px $padding-container-sm 0;
+      padding: 70px $padding-container-sm 0;
     }
 
     .activity__subheading {
