@@ -4250,13 +4250,13 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 60px 0 50px 20px;
+    padding: 0;
     gap: 32px;
   }
   .products .products__header {
     gap: 16px;
     width: 100%;
-    padding-right: 20px;
+    padding: 60px 0 0 20px;
   }
   .products .products__subheading {
     font-size: 12px;
@@ -4274,6 +4274,10 @@ body {
   .products .products__list {
     height: 570px;
     padding: 0;
+    margin-bottom: 60px;
+  }
+  .products .products__list .owl-stage-outer {
+    padding-left: 20px;
   }
   .products .products__card__content {
     min-height: 130px;
@@ -4344,12 +4348,12 @@ body {
     height: 48px;
   }
   .activity .activity__container {
-    padding: 30px 20px 30px;
+    padding: 0;
     gap: 32px;
   }
   .activity .activity__header {
     gap: 16px;
-    padding: 0;
+    padding: 30px 20px 0;
   }
   .activity .activity__subheading {
     -webkit-box-pack: start;
@@ -4366,7 +4370,7 @@ body {
   }
   .activity .activity__slider {
     display: block;
-    padding-bottom: 60px;
+    padding-bottom: 100px;
   }
   .activity .activity__slider__item {
     border-radius: 10px;

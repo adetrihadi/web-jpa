@@ -4309,14 +4309,14 @@ body {
 
     .products__container {
       flex-direction: column;
-      padding: 60px 0 50px $padding-container-sm;
+      padding: 0;
       gap: 32px;
     }
 
     .products__header {
       gap: 16px;
       width: 100%;
-      padding-right: $padding-container-sm;
+      padding: 60px 0 0 $padding-container-sm;
     }
     
     .products__subheading {
@@ -4338,6 +4338,11 @@ body {
     .products__list {
       height: 570px;
       padding: 0;
+      margin-bottom: 60px;
+
+      .owl-stage-outer {
+        padding-left: 20px;
+      }
     }
 
     .products__card__content {
@@ -4424,13 +4429,13 @@ body {
   .activity {
     
     .activity__container {
-      padding: 30px $padding-container-sm 30px;
+      padding: 0;
       gap: 32px;
     }
 
     .activity__header {
       gap: 16px;
-      padding: 0;
+      padding: 30px $padding-container-sm 0;
     }
 
     .activity__subheading {
@@ -4448,7 +4453,7 @@ body {
     
     .activity__slider {
       display: block;
-      padding-bottom: 60px;
+      padding-bottom: 100px;
     }
     
     .activity__slider__item {
