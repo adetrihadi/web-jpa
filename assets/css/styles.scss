@@ -245,6 +245,7 @@ body {
     background-color: darken($color-light-blue, 7%);
     border-color: darken($color-light-blue, 7%);
     box-shadow: none;
+    outline: none;
   }
 }
 
@@ -480,7 +481,7 @@ body {
   
   .about__vision__title {
     color: var(--color-white);
-    font-size: $heading-2-size-xl;
+    font-size: 24px;
     font-weight: 800;
     line-height: 1.5;
   }
@@ -935,9 +936,13 @@ body {
     border-radius: 2px;
     outline: none;
 
-    &:hover {
+    &:hover,
+    &:focus,
+    &:active:focus {
       background-color: var(--color-light-blue);
       color: var(--color-white);
+      outline: none;
+      box-shadow: none;
     }
   }
 }
@@ -991,6 +996,39 @@ body {
     white-space: nowrap;
     overflow: hidden;
     padding-bottom: 140px;
+
+    .owl-prev,
+    .owl-next {
+      background: var(--color-white) !important;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 56px;
+      height: 56px;
+      border: none;
+      border-radius: 50%;
+      outline: none;
+      
+      &.disabled {
+        opacity: 0.4;
+        pointer-events: none;
+      }
+
+      &:hover {
+        svg {
+          fill: var(--color-light-blue);
+          transition: all .3s ease;
+        }
+      }
+    }
+
+    .owl-prev {
+
+      svg {
+        margin-left: -6%;
+      }
+    }
   }
 
   .activity__slider__item {
@@ -1904,6 +1942,20 @@ body {
       position: absolute;
       top: 0;
       left: 0;
+    }
+  }
+
+  .modal__view {
+
+    .modal-body {
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      padding-left: 0;
+      padding-right: 0;
+      margin-top: 60px !important;
     }
   }
 }
@@ -4236,12 +4288,13 @@ body {
     .projects__container {
       display: flex;
       flex-direction: column;
-      padding: 60px $padding-container-sm;
+      padding: 60px 0;
       gap: 32px;
     }
 
     .projects__header {
       gap: 16px;
+      padding: 0 20px;
     }
   
     .projects__subheading {
@@ -4272,6 +4325,7 @@ body {
     .projects__description {
       width: 100%;
       gap: 16px;
+      padding: 0 20px;
     }
   
     .projects__category {
@@ -4286,11 +4340,13 @@ body {
     .projects__list {
       width: 100%;
       gap: 12px;
+      padding: 0 20px;
+      height: 140px;
     }
   
     .projects__list__item {
       width: auto;
-      height: auto;
+      height: 108px;
       padding: 24px;
       border-radius: 12px;
     }
@@ -4300,8 +4356,24 @@ body {
     }
 
     .owl-stage-outer {
-      width: 100%;
       padding: 10px 0 15px 0;
+      margin-left: -20px;
+      margin-right: -20px;
+    }
+
+    .owl-stage {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .owl-item {
+      visibility: hidden;
+      transition: all .3s ease-in-out;
+
+      &.active {
+        visibility: visible;
+        transition: all .3s ease-in-out;
+      }
     }
   }
 
@@ -4806,8 +4878,13 @@ body {
 
   .projects {
     
+    .projects__list {
+      height: 115px;
+    }
+
     .projects__list__item {
       padding: 18px;
+      height: 85px;
     }
   }
 
