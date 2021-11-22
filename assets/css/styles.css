@@ -2753,6 +2753,14 @@ body {
   .footer .footer__copyright {
     font-size: 14px;
   }
+  .modal__view .modal-body {
+    padding: 0;
+  }
+  .modal__view .container {
+    padding: 0;
+    max-width: 100%;
+    padding: 0 90px;
+  }
 }
 
 @media screen and (max-width: 1199px) and (min-width: 861px) {
@@ -4703,9 +4711,6 @@ body {
   .projects .projects__list__item {
     padding: 18px;
     height: 85px;
-  }
-  .products .products__container {
-    padding: 40px 0 40px 20px;
   }
   .products .products__list {
     height: auto;

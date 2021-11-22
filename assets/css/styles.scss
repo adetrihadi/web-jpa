@@ -2321,6 +2321,19 @@ body {
       font-size: $header-menu-xl;
     }
   }
+  
+  .modal__view {
+
+    .modal-body {
+      padding: 0;
+    }
+    
+    .container {
+      padding: 0;
+      max-width: 100%;
+      padding: 0 $padding-container-xl;
+    }
+  }
 }
 
 @media screen and (max-width: 1199px) and (min-width: 861px) {
@@ -4889,10 +4902,6 @@ body {
   }
 
   .products {
-
-    .products__container {
-      padding: 40px 0 40px 20px;
-    }
 
     .products__list {
       height: auto;
