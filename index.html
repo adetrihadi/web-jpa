@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  <header class="header">
+  <header class="header header__container-scrolled">
     <div class="header__container">
       <div class="header__logo">
         <a href="#" class="header__link">
@@ -795,11 +795,6 @@
     $(document).ready(function() {
       $(document).on("scroll", onScroll);
       $(window).scroll(function () {
-        if ($(document).scrollTop() > 100) {
-          $("header").addClass("header__container-scrolled");
-        } else {
-          $("header").removeClass("header__container-scrolled");
-        }
         $(".products__list").trigger("refresh.owl.carousel");
       });
       $('a[href^="#"]').on('click', function (event) {
@@ -970,7 +965,7 @@
       });
     });
     function onScroll(event) {
-      const scrollPos = $(document).scrollTop();
+      const scrollPos = $(document).scrollTop() + $(".header").outerHeight();
       $(".header__menu__list .header__menu__item a").each(function () {
         let currLink = $(this);
         let refElement = $(currLink.attr("href"));
