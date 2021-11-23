@@ -52,7 +52,7 @@
             <a href="#">
               <img src="assets/images/ic-likedin@3x.webp" alt="">
             </a>
-            <button class="btn btn-warning btn__cta btn__cta-md" data-bs-toggle="modal" data-bs-target="#modalContactForm">Contact Sales</button>
+            <button class="btn btn-warning btn__cta btn__cta-md">Contact Sales</button>
           </li>
         </ul>
       </div>
@@ -79,7 +79,7 @@
             Engaged with all billing providers and financial services industries as a Biller Aggregator
           </p>
         </div>
-        <button class="btn btn-primary btn__cta transition__fadeup transition__delay-3" data-bs-toggle="modal" data-bs-target="#modalContactForm">
+        <button class="btn btn-primary btn__cta transition__fadeup transition__delay-3">
           Contact Sales
         </button>
       </div>
@@ -538,7 +538,7 @@
         </div>
       </div>
       <div class="partners__footer">
-        <button class="btn btn-outline-primary partners__button" data-bs-toggle="modal" data-bs-target="#modalViewAll">View All</button>
+        <button class="btn btn-outline-primary partners__button">View All</button>
       </div>
     </div>
   </section>
@@ -643,7 +643,7 @@
             <a href="#">
               <img src="assets/images/ic-likedin@3x.webp" alt="linkedin">
             </a>
-            <button class="btn btn-primary btn__cta" data-bs-toggle="modal" data-bs-target="#modalContactForm">contact sales</button>
+            <button class="btn btn-primary btn__cta">contact sales</button>
           </div>
         </div>
       </div>
@@ -687,7 +687,7 @@
             </div>
             <div class="row modal__contact__row">
               <div class="col modal__contact__col">
-                <h3 class="mt-4">Contact Us</h3>
+                <h3 class="mt-4">Contact Sales</h3>
                 <p>We will contact you back via email. Also don't forget to check your email or spam just in case!</p>
                 <div class="modal__contact__form">
                   <form action="#">
@@ -923,6 +923,7 @@
       checkProjectLength();
       $(".partners__button").on("click", function(event) {
         event.preventDefault();
+        $("#modalViewAll").modal("show");
         if ($("#modalViewAll .modal__view__item").length == 0) {
           $.getJSON("partners.json", function(json) {
             json.bank.map(v => {
@@ -962,6 +963,10 @@
             });
           });
         }
+      });
+      $(".btn__cta").on("click", function(e) {
+        e.preventDefault();
+        $("#modalContactForm").modal("show");
       });
     });
     function onScroll(event) {
