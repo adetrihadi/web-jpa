@@ -989,6 +989,87 @@ body {
   gap: 120px;
 }
 
+.projects .projects__box-large {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projects .projects__box-large .projects__description {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.projects .projects__box-large .projects__description .projects__category {
+  color: var(--color-dark);
+  font-size: 24px;
+  font-weight: 800;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: normal;
+}
+
+.projects .projects__box-large .projects__description .projects__support .projects__lead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 45px;
+}
+
+.projects .projects__box-large .projects__description .projects__support .projects__lead span {
+  color: #dedede;
+  font-size: 16px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 3;
+  letter-spacing: 2.56px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.projects .projects__box-large .projects__description .projects__support .projects__lead img {
+  height: 60px;
+}
+
+.projects .projects__box-large .projects__description .projects__support .projects__team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+
+.projects .projects__box-large .projects__description .projects__support .projects__team img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 70px;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.projects .projects__box-large .projects__logo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
 .projects .projects__description {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1504,6 +1585,10 @@ body {
   width: 640px;
   position: relative;
   border-radius: 10px;
+}
+
+.activity .activity__slider__item:hover {
+  cursor: pointer;
 }
 
 .activity .activity__slider__image {
@@ -2244,6 +2329,148 @@ body {
   }
 }
 
+.detail__activity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+  margin-top: .5rem;
+}
+
+.detail__activity .detail__activity__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+
+.detail__activity .detail__activity__header .detail__activity__cover {
+  width: 100%;
+  height: 343px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
+.detail__activity .detail__activity__header .detail__activity__titledate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  gap: 16px;
+}
+
+.detail__activity .detail__activity__header .detail__activity__titledate h3 {
+  color: var(--color-black);
+  font-size: 24px !important;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+.detail__activity .detail__activity__header .detail__activity__titledate p {
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  opacity: .6;
+}
+
+.detail__activity .detail__activity__body p {
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #545a6b;
+}
+
+.detail__activity .detail__activity__body .activity__detail__shareto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+  margin-top: 32px;
+  margin-bottom: 40px;
+}
+
+.detail__activity .detail__activity__body .activity__detail__shareto span {
+  font-size: 16px;
+  font-weight: 800;
+  font-stretch: normal;
+  line-height: 2;
+}
+
+.detail__activity .detail__activity__body .activity__detail__shareto .activity__detail__socialmedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 16px;
+}
+
+.detail__activity .detail__activity__body .activity__detail__shareto .activity__detail__socialmedia .activity__button__share {
+  text-decoration: none;
+  outline: none;
+}
+
+.detail__activity .detail__activity__body .activity__detail__shareto .activity__detail__socialmedia .activity__button__share img {
+  width: 44px;
+  height: 44px;
+}
+
+.detail__activity .detail__activity__body .activity__detail__shareto .activity__detail__socialmedia .activity__button__share span {
+  display: none;
+}
+
+.detail__activity .detail__activity__body .activity__detail__shareto .activity__detail__socialmedia .activity__button__share:hover {
+  cursor: pointer;
+}
+
+.toast.show {
+  bottom: 30px;
+  right: 30px;
+  position: fixed;
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  -webkit-animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+          animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-name: slideUp;
+          animation-name: slideUp;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
 @media screen and (min-width: 1501px) {
   .header .header__container {
     padding: 10px 140px;
@@ -2498,6 +2725,82 @@ body {
     padding-right: 0;
     margin-top: 60px !important;
   }
+  #modalDetailActivity .container {
+    max-width: 100%;
+    padding: 0 320px;
+  }
+  .detail__activity {
+    gap: 32px;
+  }
+  .detail__activity .detail__activity__header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 32px;
+  }
+  .detail__activity .detail__activity__header .detail__activity__titledate {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .detail__activity .detail__activity__header .detail__activity__titledate h3 {
+    font-size: 36px !important;
+  }
+  .detail__activity .detail__activity__header .detail__activity__cover {
+    height: 450px;
+  }
+  .detail__activity .detail__activity__body .activity__detail__shareto {
+    background: #ecedf4;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 16px;
+    border-radius: 4px;
+  }
+  .detail__activity .detail__activity__body .activity__detail__shareto .activity__detail__socialmedia {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .detail__activity .detail__activity__body .activity__detail__shareto .activity__detail__socialmedia .activity__button__share {
+    background: var(--color-white);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 8px;
+    padding: 12px 16px;
+    border: 1px solid #dedede;
+    border-radius: 6px;
+  }
+  .detail__activity .detail__activity__body .activity__detail__shareto .activity__detail__socialmedia .activity__button__share img {
+    width: 24px;
+    height: 24px;
+  }
+  .detail__activity .detail__activity__body .activity__detail__shareto .activity__detail__socialmedia .activity__button__share span {
+    color: #545a6b;
+    font-size: 12px;
+    font-weight: 800;
+    display: inline-block;
+  }
+  .detail__activity .detail__activity__body .activity__detail__shareto span {
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 1399px) and (min-width: 1200px) {
@@ -2553,6 +2856,7 @@ body {
   }
   .about .about__container {
     padding: 100px 90px 50px;
+    gap: 90px;
   }
   .about .about__text {
     width: 100%;
@@ -2579,6 +2883,7 @@ body {
   }
   .benefit .benefit__container {
     padding: 100px 90px;
+    gap: 90px;
   }
   .benefit .benefit__subheading {
     font-size: 16px;
@@ -2768,6 +3073,77 @@ body {
     max-width: 100%;
     padding: 0 90px;
   }
+  #modalDetailActivity .container {
+    max-width: 100%;
+    padding: 0 280px;
+  }
+  .detail__activity {
+    gap: 32px;
+    margin-top: 60px;
+  }
+  .detail__activity .detail__activity__header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 32px;
+  }
+  .detail__activity .detail__activity__header .detail__activity__titledate {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .detail__activity .detail__activity__body .activity__detail__shareto {
+    background: #ecedf4;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 16px;
+    border-radius: 4px;
+  }
+  .detail__activity .detail__activity__body .activity__detail__shareto .activity__detail__socialmedia {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .detail__activity .detail__activity__body .activity__detail__shareto .activity__detail__socialmedia .activity__button__share {
+    background: var(--color-white);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border: 1px solid #dedede;
+    border-radius: 6px;
+  }
+  .detail__activity .detail__activity__body .activity__detail__shareto .activity__detail__socialmedia .activity__button__share img {
+    width: 24px;
+    height: 24px;
+  }
+  .detail__activity .detail__activity__body .activity__detail__shareto .activity__detail__socialmedia .activity__button__share span {
+    color: #545a6b;
+    font-size: 12px;
+    font-weight: 800;
+    display: inline-block;
+  }
+  .detail__activity .detail__activity__body .activity__detail__shareto span {
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 1199px) and (min-width: 861px) {
@@ -2910,6 +3286,15 @@ body {
   }
   .projects .projects__box {
     gap: 60px;
+  }
+  .projects .projects__box-large .projects__description .projects__support .projects__lead span {
+    font-size: 12px;
+  }
+  .projects .projects__box-large .projects__description .projects__support .projects__lead img {
+    height: 50px;
+  }
+  .projects .projects__box-large .projects__description .projects__support .projects__team img {
+    height: 50px;
   }
   .projects .projects__description {
     gap: 14px;
@@ -3281,6 +3666,17 @@ body {
   }
   .projects .projects__box {
     gap: 30px;
+  }
+  .projects .projects__box-large .projects__description .projects__support .projects__lead img {
+    height: 40px;
+  }
+  .projects .projects__box-large .projects__description .projects__support .projects__team img {
+    height: 40px;
+  }
+  .projects .projects__box-large .projects__logo {
+    height: 340px;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .projects .projects__description {
     gap: 14px;
@@ -3949,6 +4345,18 @@ body {
   .close span {
     right: 20px;
   }
+  .projects .projects__box-large .projects__description .projects__support .projects__lead span {
+    font-size: 12px;
+  }
+  .projects .projects__box-large .projects__description .projects__support .projects__lead img {
+    height: 30px;
+  }
+  .projects .projects__box-large .projects__description .projects__support .projects__team img {
+    height: 40px;
+  }
+  .projects .projects__box-large .projects__logo {
+    width: 200px;
+  }
 }
 
 @media screen and (max-width: 466px) {
@@ -4285,6 +4693,55 @@ body {
         -ms-flex-align: start;
             align-items: flex-start;
     gap: 24px;
+  }
+  .projects .projects__box-large {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-bottom: 1.5rem;
+  }
+  .projects .projects__box-large .projects__description .projects__support .projects__lead {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 0;
+  }
+  .projects .projects__box-large .projects__description .projects__support .projects__lead span {
+    font-size: 14px;
+    line-height: 1.38;
+  }
+  .projects .projects__box-large .projects__description .projects__support .projects__lead img {
+    height: 50px;
+  }
+  .projects .projects__box-large .projects__description .projects__support .projects__team {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 30px;
+  }
+  .projects .projects__box-large .projects__description .projects__support .projects__team img {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    height: 50px;
+    width: auto;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .projects .projects__box-large .projects__logo {
+    padding: 0 20px;
   }
   .projects .projects__description {
     width: 100%;
