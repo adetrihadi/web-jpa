@@ -5209,6 +5209,18 @@ body {
       width: auto;
     }
   }
+
+  .detail__activity {
+    .detail__activity__header {
+      .detail__activity__titledate {
+        gap: 0;
+
+        p {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 360px) {

@@ -5104,6 +5104,12 @@ body {
   .btn__cta.btn__cta-md {
     width: auto;
   }
+  .detail__activity .detail__activity__header .detail__activity__titledate {
+    gap: 0;
+  }
+  .detail__activity .detail__activity__header .detail__activity__titledate p {
+    margin-bottom: 1rem;
+  }
 }
 
 @media screen and (max-width: 360px) {
