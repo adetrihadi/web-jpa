@@ -1724,7 +1724,7 @@ body {
       font-weight: 500;
       font-stretch: normal;
       font-style: normal;
-      line-height: 2;
+      line-height: 2.1;
       letter-spacing: normal;
       text-align: left;
       color: #545a6b;
@@ -4730,6 +4730,7 @@ body {
     .projects__box-large {
       flex-direction: column-reverse;
       margin-bottom: 1.5rem;
+      gap: 0;
 
       .projects__description {
         .projects__support {
@@ -4761,9 +4762,14 @@ body {
             }
           }
         }
+        .projects__category {
+          font-size: 21px;
+          line-height: 1.2;
+        }
       }
       .projects__logo {
         padding: 0 20px;
+        margin-bottom: 25px;
       }
     }
   
