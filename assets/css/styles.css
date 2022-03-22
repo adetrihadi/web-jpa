@@ -1048,20 +1048,21 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 30px;
+  gap: 1.8rem;
 }
 
 .projects .projects__box-large .projects__description .projects__support .projects__team img {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  height: 70px;
-  width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  height: 60px;
+  width: 120px;
 }
 
 .projects .projects__box-large .projects__logo {
@@ -4758,9 +4759,6 @@ body {
     font-size: 21px;
     line-height: 1.2;
   }
-  .projects .projects__box-large .projects__description .projects__paragraph {
-    line-height: 24px;
-  }
   .projects .projects__box-large .projects__logo {
     padding: 0 20px;
     margin-bottom: 25px;
@@ -4775,7 +4773,7 @@ body {
   }
   .projects .projects__paragraph {
     font-size: 14px;
-    line-height: 1.5;
+    line-height: 28px;
   }
   .projects .projects__list {
     width: 100%;

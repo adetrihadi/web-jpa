@@ -718,14 +718,14 @@ body {
         .projects__team {
           display: flex;
           flex-direction: row;
+          justify-content: flex-start;
           align-items: center;
-          gap: 30px;
+          gap: 1.8rem;
 
           img {
-            flex: 1;
-            height: 70px;
-            width: 100%;
-            object-fit: contain;
+            flex: none;
+            height: 60px;
+            width: 120px;
           }
         }
       }
@@ -4770,9 +4770,6 @@ body {
           font-size: 21px;
           line-height: 1.2;
         }
-        .projects__paragraph {
-          line-height: 24px;
-        }
       }
       .projects__logo {
         padding: 0 20px;
@@ -4792,7 +4789,7 @@ body {
   
     .projects__paragraph {
       font-size: 14px;
-      line-height: 1.5;
+      line-height: 28px;
     }
 
     .projects__list {
