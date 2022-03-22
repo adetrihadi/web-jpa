@@ -2677,6 +2677,19 @@ body {
     gap: 32px;
   }
   .projects .projects__list__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
     height: 180px;
     padding: 40px;
@@ -4744,6 +4757,9 @@ body {
   .projects .projects__box-large .projects__description .projects__category {
     font-size: 21px;
     line-height: 1.2;
+  }
+  .projects .projects__box-large .projects__description .projects__paragraph {
+    line-height: 24px;
   }
   .projects .projects__box-large .projects__logo {
     padding: 0 20px;
