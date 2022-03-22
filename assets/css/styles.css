@@ -1592,6 +1592,10 @@ body {
   cursor: pointer;
 }
 
+.activity .activity__slider__item:hover h3.activity__slider__title {
+  text-decoration: underline;
+}
+
 .activity .activity__slider__image {
   display: block;
   margin: 0;
