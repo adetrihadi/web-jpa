@@ -3685,7 +3685,8 @@ body {
     height: 40px;
   }
   .projects .projects__box-large .projects__description .projects__support .projects__team img {
-    height: 40px;
+    height: 54px;
+    width: auto;
   }
   .projects .projects__box-large .projects__logo {
     height: 340px;
@@ -3700,7 +3701,7 @@ body {
   }
   .projects .projects__paragraph {
     font-size: 14px;
-    line-height: 1.5;
+    line-height: 28px;
   }
   .projects .projects__list {
     gap: 24px;

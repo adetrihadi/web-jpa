@@ -557,7 +557,7 @@
         </div>
       </div>
       <div class="partners__footer">
-        <button class="btn btn-outline-primary partners__button">View All</button>
+        <button class="btn btn-outline-primary partners__button" data-bs-toggle="modal" data-bs-target="#modalViewAll">View All</button>
       </div>
     </div>
   </section>
@@ -1013,9 +1013,8 @@
         }
       });
       checkProjectLength();
-      $(".partners__button").on("click", function(event) {
+      $("#modalViewAll").on("shown.bs.modal", function(event) {
         event.preventDefault();
-        $("#modalViewAll").modal("show");
         if ($("#modalViewAll .modal__view__item").length == 0) {
           $.getJSON("partners.json", function(json) {
             json.bank.map(v => {

@@ -3413,7 +3413,8 @@ body {
           }
           .projects__team {
             img {
-              height: 40px;
+              height: 54px;
+              width: auto;
             }
           }
         }
@@ -3434,7 +3435,7 @@ body {
   
     .projects__paragraph {
       font-size: $heading-2-size-xs;
-      line-height: 1.5;
+      line-height: 28px;
     }
 
     .projects__list {
