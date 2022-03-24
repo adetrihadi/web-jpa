@@ -4779,6 +4779,7 @@ body {
   .projects .projects__box-large .projects__description .projects__category {
     font-size: 24px;
     line-height: 2;
+    margin-bottom: 5px;
   }
   .projects .projects__box-large .projects__description .projects__paragraph {
     font-size: 18px;
