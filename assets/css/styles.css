@@ -1054,7 +1054,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 1.8rem;
+  gap: 2.5rem;
 }
 
 .projects .projects__box-large .projects__description .projects__support .projects__team img {
@@ -1062,7 +1062,11 @@ body {
       -ms-flex: none;
           flex: none;
   height: 60px;
-  width: 120px;
+  width: 80px;
+}
+
+.projects .projects__box-large .projects__description .projects__support .projects__team img:nth-child(1) {
+  width: 160px;
 }
 
 .projects .projects__box-large .projects__logo {

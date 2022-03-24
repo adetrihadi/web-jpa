@@ -720,12 +720,16 @@ body {
           flex-direction: row;
           justify-content: flex-start;
           align-items: center;
-          gap: 1.8rem;
+          gap: 2.5rem;
 
           img {
             flex: none;
             height: 60px;
-            width: 120px;
+            width: 80px;
+
+            &:nth-child(1) {
+              width: 160px;
+            }
           }
         }
       }
