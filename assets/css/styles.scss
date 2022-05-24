@@ -1141,6 +1141,11 @@ body {
     font-weight: 800;
     line-height: 1.33;
     white-space: normal;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   .activity__slider__date {

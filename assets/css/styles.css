@@ -1637,6 +1637,11 @@ body {
   font-weight: 800;
   line-height: 1.33;
   white-space: normal;
+  text-decoration: none;
+}
+
+.activity .activity__slider__title:hover {
+  text-decoration: underline;
 }
 
 .activity .activity__slider__date {
