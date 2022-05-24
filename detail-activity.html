@@ -18,7 +18,7 @@
   <div class="modal fade-up modal__view show" id="modalDetailActivity" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
       <div class="modal-content">
-        <div class="close">
+        <div class="close" onclick="history.back()">
           <span></span>
           <span>Close</span>
           <span>
@@ -69,7 +69,7 @@
                           <img src="assets/images/ic-twitter@2x.png" alt="share to twitter">
                           <span>Twitter</span>
                         </a>
-                        <a href="javascript:;" id="share-copy" class="activity__button__share" data-toggle="tooltip" title="Success">
+                        <a href="javascript:;" id="share-copy" class="activity__button__share" data-toggle="tooltip" title="Success" onclick="copyLink(window.location.href)">
                           <img src="assets/images/ic-salin@2x.png" alt="copy link">
                           <span>Salin</span>
                         </a>
@@ -100,9 +100,17 @@
     $(window).on("load", function() {
       $("#modalDetailActivity").modal("show");
     });
+    function copyLink(params) {
+      navigator.clipboard.writeText(params).then(function() {
+        $("#toastSuccess").addClass("show");
+        setTimeout(() => {
+          $("#toastSuccess").removeClass("show");
+        }, 2000);
+      });
+    }
     $(document).ready(function() {
-      $(".close").on("click", function() {
-        window.location.href = "/#activity";
+      $("#dismiss-toast-success").on("click", function() {
+        $("#toastSuccess").removeClass("show");
       });
     });
   </script>

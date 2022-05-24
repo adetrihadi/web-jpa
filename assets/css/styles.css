@@ -1628,6 +1628,7 @@ body {
   border-radius: 10px;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(12, 20, 44, 0)), to(#0c142c));
   background-image: linear-gradient(to bottom, rgba(12, 20, 44, 0) 50%, #0c142c);
+  cursor: default;
 }
 
 .activity .activity__slider__title {
