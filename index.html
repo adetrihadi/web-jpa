@@ -1062,7 +1062,7 @@
       });
       $(".activity__slider__item").on("click", function(e) {
         e.preventDefault();
-        $("#modalDetailActivity").modal("show");
+        window.location.href = "detail-activity.html";
       });
       let url = window.location.href;
       $("#share-facebook").on("click", function() {
