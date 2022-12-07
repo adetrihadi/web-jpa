@@ -13,6 +13,25 @@
   <link rel="stylesheet" href="assets/css/owl.min.css">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <style>
+    .home {
+      background: url("assets/images/img-jumbotron@2x.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: right;
+    }
+
+    @media screen and (max-width: 466px) {
+      .home {
+        background: url("assets/images/img-banner-responsive@2x.png");
+        background-size: contain;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        height: 740px;
+        margin-bottom: 0;
+      }
+    }
+  </style>
 </head>
 <body>
   <header class="header header__container-scrolled">
@@ -43,7 +62,7 @@
             <a href="#partners" class="header__menu__link">Partners</a>
           </li>
           <li class="header__menu__item">
-            <a href="#activity" class="header__menu__link">Activity</a>
+            <a href="#article" class="header__menu__link">Article</a>
           </li>
           <li class="header__menu__item-mobile">
             <a href="#">
@@ -167,28 +186,28 @@
       <div class="benefit__body">
         <h3 class="benefit__subheading">Achievement <span class="satu-garis"></span></h3>
         <h1 class="benefit__heading">License & Certificate</h1>
-        <ul class="benefit__list">
-          <li class="benefit__item">
-            <span class="benefit__number">1</span>
-            <span>ISO 9001 UKAS Certification by Bureau Veritas Indonesia</span>
-          </li>
-          <li class="benefit__item">
-            <span class="benefit__number">2</span>
-            <span>ISO 270001 KAN Certification by Bureau Veritas Indonesia</span>
-          </li>
-          <li class="benefit__item">
-            <span class="benefit__number">3</span>
-            <span>Uang Elektronik (E-Money) BI License 22/478/DKSP/Srt/B</span>
-          </li>
-          <li class="benefit__item">
-            <span class="benefit__number">4</span>
-            <span>Transfer Dana License 22/478/DKSP/Srt/B</span>
-          </li>
-          <li class="benefit__item">
-            <span class="benefit__number">5</span>
-            <span>Payment Gateway License PBI 22/23/PBI/2020 as PJP 1</span>
-          </li>
-        </ul>
+        <div class="benefit__description">
+          <p>
+            Jatelindo Perkasa Abadi has licenses and certifications according to Indonesian standards, which means we comply with all existing rules and regulations to create satisfaction and trust in providing the best service.
+          </p>
+        </div>
+        <div class="benefit__image benefit__image_sm">
+          <img src="assets/images/img-license-certification@2x.png" class="benefit__illustration" alt="benefit">
+        </div>
+        <div id="benefitAchievement" class="benefit__list owl-carousel owl-theme owl-drag">
+          <div class="benefit__card">
+            <img src="assets/images/logo-kominfo@2x.png" alt="logo kominfo" class="cirtificate__logo">
+          </div>
+          <div class="benefit__card">
+            <img src="assets/images/logo-UKAS@2x.png" alt="logo ukas" class="cirtificate__logo">
+          </div>
+          <div class="benefit__card">
+            <img src="assets/images/logo-bureau-veritas@2x.png" alt="logo bureau veritas" class="cirtificate__logo">
+          </div>
+          <div class="benefit__card">
+            <img src="assets/images/logo-KAN@2x.png" alt="logo kan" class="cirtificate__logo">
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -215,7 +234,7 @@
             <div class="projects__support">
               <div class="projects__lead">
                 <span>support by :</span>
-                <img src="assets/images/logo-jatelindo-project@2x.png" alt="">
+                <img src="assets/images/logo-jatelindo-black@2x.png" alt="">
               </div>
               <div class="projects__team">
                 <img src="assets/images/logo-thales@2x.png" alt="">
@@ -360,7 +379,7 @@
                   </p>
                 </div>
                 <div class="products__card__footer">
-                  <a href="" class="products__card__link">
+                  <a href="https://narobil.id" class="products__card__link" target="_blank">
                     Know More                    
                     <svg class="ic-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                       <defs>
@@ -387,7 +406,7 @@
                   </p>
                 </div>
                 <div class="products__card__footer">
-                  <a href="" class="products__card__link">
+                  <a href="https://fello.id" class="products__card__link" target="_blank">
                     Know More
                     <svg class="ic-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                       <defs>
@@ -561,10 +580,10 @@
       </div>
     </div>
   </section>
-  <section id="activity" class="activity">
+  <section id="article" class="activity">
     <div class="activity__container">
       <div class="activity__header">
-        <h3 class="activity__subheading">Activity <span class="satu-garis"></span></h3>
+        <h3 class="activity__subheading">Article <span class="satu-garis"></span></h3>
         <h1 class="activity__heading">Follow all of our activities</h1>
       </div>
       <div class="activity__slider owl-carousel owl-loaded owl-theme owl-drag">
@@ -629,7 +648,7 @@
   <footer id="footer" class="footer">
     <div class="footer__container">
       <div class="footer__top">
-        <img src="assets/images/logo-jatelindo-white@3x.webp" class="footer__logo" alt="">
+        <img src="assets/images/logo-jatelindo@2x.png" class="footer__logo" alt="">
       </div>
       <div class="footer__body">
         <div class="footer__contact">
@@ -672,7 +691,7 @@
           Jl. Sunan Kalijaga Blok K/5 No 63B, RT 003/RW 001, Kelurahan Melawai, Kebayoran Baru, Jakarta Selatan (12160)
         </div>
         <div class="footer__copyright">
-          © Copyright - PT Jatelindo Perkasa Abadi 2022
+          © Copyright - PT Jatelindo Perkasa Abadi <script>document.write(new Date().getFullYear())</script>
         </div>
       </div>
     </div>
@@ -1013,6 +1032,7 @@
         }
       });
       checkProjectLength();
+      checkAchievementLenght();
       $(".partners__button").on("click", function(e) {
         e.preventDefault();
         $("#modalViewAll").modal("show");
@@ -1118,11 +1138,19 @@
         }
       });
     }
-    function initSlide(element) {
+    function checkAchievementLenght() {
+      const parent = document.querySelectorAll(".benefit__list");
+      parent.forEach(element => {
+        if (element.childElementCount > 4) {
+          initSlide(element, 4);
+        }
+      });
+    }
+    function initSlide(element, items = 3) {
       const el = $(`#${element.id}`);
       el.owlCarousel({
         loop: true,
-        items: 3,
+        items: items,
         margin: 40,
         autoplay: true,
         autoplayTimeout: 3000,
