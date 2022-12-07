@@ -4518,7 +4518,7 @@ body {
   .header {
 
     .header__container {
-      padding: 8px $padding-container-xs;
+      padding: 12px $padding-container-xs;
     }
 
     .header__logo {
@@ -4813,6 +4813,10 @@ body {
 
     .benefit__description {
       order: 5;
+
+      p {
+        font-size: 16px;
+      }
     }
 
     .benefit__list {
@@ -5231,8 +5235,8 @@ body {
     }
   
     .footer__logo {
-      width: 180px;
-      height: 15px;
+      width: 112px;
+      height: 28px;
     }
 
     .footer__body {

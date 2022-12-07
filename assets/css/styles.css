@@ -4536,7 +4536,7 @@ body {
 
 @media screen and (max-width: 466px) {
   .header .header__container {
-    padding: 8px 20px;
+    padding: 12px 20px;
   }
   .header .header__logo {
     display: block;
@@ -4829,6 +4829,9 @@ body {
     -webkit-box-ordinal-group: 6;
         -ms-flex-order: 5;
             order: 5;
+  }
+  .benefit .benefit__description p {
+    font-size: 16px;
   }
   .benefit .benefit__list {
     gap: 16px;
@@ -5217,8 +5220,8 @@ body {
     margin-bottom: 33px;
   }
   .footer .footer__logo {
-    width: 180px;
-    height: 15px;
+    width: 112px;
+    height: 28px;
   }
   .footer .footer__body {
     -webkit-box-orient: vertical;
