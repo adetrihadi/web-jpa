@@ -739,6 +739,12 @@
                       <label>Name</label>
                     </div>
                     <div class="modal__contact__form-group mb-3">
+                      <input type="tel" class="modal__contact__input-control" required="required" />
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label>No.Handphone</label>
+                    </div>
+                    <div class="modal__contact__form-group mb-3">
                       <input type="text" class="modal__contact__input-control" required="required" />
                       <span class="highlight"></span>
                       <span class="bar"></span>
@@ -1104,6 +1110,9 @@
       });
       $("#dismiss-toast-success").on("click", function() {
         $("#toastSuccess").removeClass("show");
+      });
+      $("input[type=tel]").keypress(function(event) {
+        return /\d/.test(String.fromCharCode(event.keyCode));
       });
     });
     function onScroll(event) {
